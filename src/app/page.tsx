@@ -11,6 +11,9 @@ type MenuItem = {
   recipeSource?: string;
   image?: string;
   protein?: string;
+  servings?: string;
+  ingredients?: string[];
+  steps?: string[];
   tags: string[];
 };
 
@@ -64,6 +67,36 @@ function RecipeModal({
             </p>
           )}
 
+          {item.ingredients && item.ingredients.length > 0 && (
+            <div className="mt-4">
+              <h3 className="font-[family-name:var(--font-typewriter)] text-sm text-ink mb-2">
+                Ingredients
+                {item.servings && (
+                  <span className="font-[family-name:var(--font-body)] text-xs text-muted ml-2">
+                    (serves {item.servings})
+                  </span>
+                )}
+              </h3>
+              <ul className="list-disc pl-5 space-y-1 font-[family-name:var(--font-body)] text-sm text-ink/90 leading-relaxed">
+                {item.ingredients.map((ingredient) => (
+                  <li key={ingredient}>{ingredient}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {item.steps && item.steps.length > 0 && (
+            <div className="mt-4">
+              <h3 className="font-[family-name:var(--font-typewriter)] text-sm text-ink mb-2">
+                Method
+              </h3>
+              <ol className="list-decimal pl-5 space-y-2 font-[family-name:var(--font-body)] text-sm text-ink/90 leading-relaxed">
+                {item.steps.map((step, i) => (
+                  <li key={i}>{step}</li>
+                ))}
+              </ol>
+            </div>
+          )}
+
           <div className="flex gap-2 mt-4">
             {item.recipeUrl && (
               <a
@@ -73,7 +106,7 @@ function RecipeModal({
                 className="flex-1 text-center font-[family-name:var(--font-typewriter)] text-sm text-white bg-red-pen/90 px-4 py-2.5 hover:bg-red-pen transition-colors"
                 style={{ borderRadius: "2px" }}
               >
-                🔗 Open Recipe
+                {item.steps ? "🔗 Original Recipe" : "🔗 Open Recipe"}
               </a>
             )}
             <button

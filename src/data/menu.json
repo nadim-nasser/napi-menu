@@ -66,8 +66,30 @@
         {
           "name": "Turkish Eggs",
           "emoji": "🍳",
-          "description": "Soft poached eggs on garlicky yoghurt, drizzled with chilli butter, with bread for dipping",
-          "recipeUrl": "",
+          "description": "Poached eggs on garlicky labneh, drizzled with chili oil, red pepper flakes & dried mint, with bread for dipping",
+          "recipeUrl": "https://cooking.nytimes.com/recipes/1024227-cilbir-turkish-eggs-with-yogurt",
+          "recipeSource": "NYT Cooking (adapted)",
+          "servings": "2",
+          "ingredients": [
+            "1 cup labneh (or thick, strained Greek yogurt)",
+            "1 small garlic clove, finely grated",
+            "Salt and black pepper",
+            "2 tbsp white vinegar",
+            "6 large eggs",
+            "2 tbsp chili oil made with olive oil (such as Calabrian chili oil)",
+            "½ tsp red pepper flakes",
+            "½ tsp dried mint",
+            "Chopped fresh dill or parsley leaves, for garnish",
+            "Toasted crusty bread or flatbread, for serving"
+          ],
+          "steps": [
+            "Take the labneh out of the fridge early so it isn't fridge-cold. Stir in the garlic and a pinch of salt, then spread it across two shallow bowls.",
+            "Stir the red pepper flakes and dried mint into the chili oil and set it aside.",
+            "Bring a wide pan of water to a gentle simmer and add the vinegar.",
+            "Crack each egg into a small cup and slide it into the water. Poach 3 at a time for 3–4 minutes, until the whites are set and the yolks are still runny.",
+            "Lift the eggs out with a slotted spoon and let them drain on a paper towel.",
+            "Set 3 eggs on each bowl of labneh, season with salt and pepper, spoon the chili oil over the top and scatter with herbs. Serve with the bread."
+          ],
           "image": "",
           "tags": []
         }

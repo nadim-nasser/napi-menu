@@ -43,6 +43,7 @@ Edit `src/data/menu.json`. Add a new item to the appropriate category's `items` 
 ```
 For Dishoom recipes, add `"recipeSource": "Dishoom"` instead of a URL.
 For snacks with protein info, add `"protein": "20g"`.
+To show a full recipe in the dish popup, add `"servings": "2"`, `"ingredients": [...]` and `"steps": [...]` (arrays of strings). See Turkish Eggs for an example.
 
 ### Changing the design
 - Colours: edit CSS variables in `src/app/globals.css`
