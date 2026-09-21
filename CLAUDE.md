@@ -10,7 +10,8 @@ This is Nadim & Rupi's personal meal planning website, live at **https://napi-me
 ## Project Structure
 - `src/data/menu.json` — **THE MENU DATA**. All dishes, emojis, descriptions, recipe links, and protein info live here. This is the main file to edit when adding/removing/changing meals.
 - `src/app/page.tsx` — Menu page (homepage). Shows all dishes in collapsible Breakfast / Lunch-Dinner / Snacks sections. Clicking a dish opens a recipe popup.
-- `src/app/plan/page.tsx` — Weekly meal planner. Table with Breakfast / Lunch / Dinner columns for each day of the week.
+- `src/app/plan/page.tsx` — Weekly meal planner. Table with Breakfast / Lunch / Dinner columns for each day of the week. Syncs between devices via Vercel KV.
+- `src/app/api/plan/route.ts` — API route for shared weekly plan storage (GET + PUT). Uses Vercel KV (Redis).
 - `src/components/nav.tsx` — Navigation bar.
 - `src/app/globals.css` — Global styles (colours, background, fonts).
 - `src/app/layout.tsx` — Root layout with fonts (Special Elite typewriter, Lato body, Caveat handwritten).
@@ -63,7 +64,7 @@ The site auto-deploys in ~30 seconds after pushing.
   ```
   node -e "JSON.parse(require('fs').readFileSync('src/data/menu.json','utf8'))" && echo OK
   ```
-- **The planner is not shared.** `src/app/plan/page.tsx` saves each week's plan to the browser's `localStorage` (key `napi-weekly-plan-<week>`). Nadim and Rupi each see only what was entered in their own browser, and clearing site data wipes it. There is no database or backend; syncing between people would need one.
+- **The planner is shared via Vercel KV.** The API route at `src/app/api/plan/route.ts` stores the weekly plan in Vercel KV (Redis), keyed by week. Both Nadim and Rupi see the same plan. It polls every 10 seconds for updates. Requires `KV_REST_API_URL` and `KV_REST_API_TOKEN` env vars (set up via Vercel KV store in the dashboard).
 - **If `git push` fails with an auth error** on a new machine, log in to GitHub and let git use that login:
   ```
   gh auth login
