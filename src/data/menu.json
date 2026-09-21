@@ -1,0 +1,197 @@
+{
+  "categories": [
+    {
+      "name": "Breakfast",
+      "emoji": "🌅",
+      "items": [
+        {
+          "name": "Omelette + Toast / Avocado",
+          "emoji": "🥚",
+          "description": "Classic omelette with toast or avocado on the side",
+          "recipeUrl": "",
+          "image": "",
+          "tags": ["quick"]
+        },
+        {
+          "name": "Samosa Wrap",
+          "emoji": "🌯",
+          "description": "Spiced samosa filling in a wrap",
+          "recipeUrl": "",
+          "image": "",
+          "tags": []
+        },
+        {
+          "name": "Tofu Scramble",
+          "emoji": "🌱",
+          "description": "Seasoned crumbled tofu scramble",
+          "recipeUrl": "",
+          "image": "",
+          "tags": ["vegan"]
+        },
+        {
+          "name": "Protein Pancakes",
+          "emoji": "🥞",
+          "description": "Fluffy pancakes with added protein",
+          "recipeUrl": "",
+          "image": "",
+          "tags": ["protein"]
+        },
+        {
+          "name": "Akuri Eggs",
+          "emoji": "🍳",
+          "description": "Irani cafe classic — Parsi spiced scrambled eggs with chilli, coriander & turmeric on buttered sourdough",
+          "recipeUrl": "",
+          "recipeSource": "Dishoom",
+          "image": "",
+          "tags": ["dishoom"]
+        },
+        {
+          "name": "Banana Date Porridge + Chia Seed",
+          "emoji": "🍌",
+          "description": "Hearty winter-warmer — Medjool dates, banana & steel-cut oats. Natural sweetness, no sugar needed",
+          "recipeUrl": "",
+          "recipeSource": "Dishoom",
+          "image": "",
+          "tags": ["fibre"]
+        },
+        {
+          "name": "Fire Toast Masala Beans",
+          "emoji": "🔥",
+          "description": "Charred sourdough fire toast topped with spiced Heinz beans in onion-tomato masala, garam masala & green chilli",
+          "recipeUrl": "",
+          "recipeSource": "Dishoom",
+          "image": "",
+          "tags": ["dishoom"]
+        }
+      ]
+    },
+    {
+      "name": "Lunch / Dinner",
+      "emoji": "🍽️",
+      "items": [
+        {
+          "name": "Miso Fish w/ Rice",
+          "emoji": "🐟",
+          "description": "Miso-glazed fish with rice. Side: sauteed mushrooms + broccoli or zucchini",
+          "recipeUrl": "",
+          "image": "",
+          "tags": ["healthy"]
+        },
+        {
+          "name": "Chicken Quesadilla",
+          "emoji": "🌮",
+          "description": "Wraps with greek yogurt, Whole Foods chicken, green onion & red pepper",
+          "recipeUrl": "",
+          "image": "",
+          "tags": []
+        },
+        {
+          "name": "Beef Burgers",
+          "emoji": "🍔",
+          "description": "Homemade beef burgers",
+          "recipeUrl": "",
+          "image": "",
+          "tags": []
+        },
+        {
+          "name": "Beef & Veggie Power Bowl",
+          "emoji": "🥦",
+          "description": "Stir-fried beef and broccoli in savoury sauce",
+          "recipeUrl": "",
+          "image": "",
+          "tags": []
+        },
+        {
+          "name": "Chicken Tandoori",
+          "emoji": "🍗",
+          "description": "Yogurt-marinated spiced chicken, grilled or oven-roasted",
+          "recipeUrl": "",
+          "image": "",
+          "tags": []
+        },
+        {
+          "name": "Momofuku Noodles",
+          "emoji": "🍜",
+          "description": "Momofuku-style noodles with veggies and protein",
+          "recipeUrl": "",
+          "image": "",
+          "tags": []
+        },
+        {
+          "name": "Coconut Fish & Tomato Bake",
+          "emoji": "🥥",
+          "description": "Baked fish in coconut and tomato sauce",
+          "recipeUrl": "https://cooking.nytimes.com/recipes/1022129-coconut-fish-and-tomato-bake",
+          "image": "",
+          "tags": ["nyt", "healthy"]
+        },
+        {
+          "name": "Black Cod Broiled with Miso",
+          "emoji": "🎣",
+          "description": "Nobu-style miso-marinated black cod",
+          "recipeUrl": "https://cooking.nytimes.com/recipes/6450-black-cod-broiled-with-miso",
+          "image": "",
+          "tags": ["nyt"]
+        }
+      ]
+    },
+    {
+      "name": "Snacks",
+      "emoji": "🥨",
+      "items": [
+        {
+          "name": "Cottage Cheese Bruschetta",
+          "emoji": "🧀",
+          "description": "Toasted bread with cottage cheese topping",
+          "recipeUrl": "",
+          "image": "",
+          "protein": "20g",
+          "tags": ["protein"]
+        },
+        {
+          "name": "Chia Seed Pudding",
+          "emoji": "🫙",
+          "description": "Overnight chia pudding, good for fibre",
+          "recipeUrl": "",
+          "image": "",
+          "tags": ["fibre"]
+        },
+        {
+          "name": "Yogurt + Honey",
+          "emoji": "🍯",
+          "description": "Greek yogurt drizzled with honey",
+          "recipeUrl": "",
+          "image": "",
+          "protein": "~16g",
+          "tags": ["protein"]
+        },
+        {
+          "name": "Lentil Salad",
+          "emoji": "🥗",
+          "description": "Hearty lentil salad",
+          "recipeUrl": "",
+          "image": "",
+          "protein": "7-10g",
+          "tags": ["protein", "healthy"]
+        },
+        {
+          "name": "Fattoush Salad",
+          "emoji": "🥙",
+          "description": "Lebanese salad with crispy pita, fresh veg & sumac dressing — yum",
+          "recipeUrl": "",
+          "image": "",
+          "tags": ["healthy"]
+        },
+        {
+          "name": "Protein Shake",
+          "emoji": "🥤",
+          "description": "Quick protein shake",
+          "recipeUrl": "",
+          "image": "",
+          "protein": "30-40g",
+          "tags": ["protein"]
+        }
+      ]
+    }
+  ]
+}

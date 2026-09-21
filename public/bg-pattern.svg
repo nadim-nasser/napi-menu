@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .sketch { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <!-- Tomato top-left area -->
+  <g transform="translate(80, 60) rotate(-8)" opacity="0.06">
+    <ellipse cx="0" cy="0" rx="28" ry="24" fill="#8b2500" />
+    <ellipse cx="-6" cy="-2" rx="22" ry="20" fill="#a03020" />
+    <path d="M-5,-24 Q-2,-32 2,-28 Q6,-24 3,-20" stroke="#3a5a2a" stroke-width="2" fill="none" class="sketch"/>
+    <path d="M-2,-24 Q4,-34 8,-28" stroke="#3a5a2a" stroke-width="1.5" fill="none" class="sketch"/>
+  </g>
+
+  <!-- Small herb sprig right side -->
+  <g transform="translate(720, 120) rotate(15)" opacity="0.05">
+    <path d="M0,0 Q-3,-15 -2,-30 Q0,-40 2,-50" stroke="#3a5a2a" stroke-width="1.5" fill="none" class="sketch"/>
+    <path d="M-2,-15 Q-12,-20 -15,-18" stroke="#3a5a2a" stroke-width="1" fill="none" class="sketch"/>
+    <path d="M-1,-25 Q-10,-28 -14,-25" stroke="#3a5a2a" stroke-width="1" fill="none" class="sketch"/>
+    <path d="M0,-18 Q8,-22 12,-19" stroke="#3a5a2a" stroke-width="1" fill="none" class="sketch"/>
+    <path d="M1,-30 Q9,-34 13,-30" stroke="#3a5a2a" stroke-width="1" fill="none" class="sketch"/>
+    <ellipse cx="-15" cy="-18" rx="6" ry="3" fill="#3a5a2a" opacity="0.3" transform="rotate(-20,-15,-18)"/>
+    <ellipse cx="-14" cy="-25" rx="5" ry="3" fill="#3a5a2a" opacity="0.3" transform="rotate(-15,-14,-25)"/>
+    <ellipse cx="12" cy="-19" rx="5" ry="3" fill="#3a5a2a" opacity="0.3" transform="rotate(15,12,-19)"/>
+    <ellipse cx="13" cy="-30" rx="5" ry="3" fill="#3a5a2a" opacity="0.3" transform="rotate(20,13,-30)"/>
+  </g>
+
+  <!-- Lemon slice center-right -->
+  <g transform="translate(680, 350) rotate(25)" opacity="0.05">
+    <circle cx="0" cy="0" r="20" fill="#d4a017" opacity="0.4"/>
+    <circle cx="0" cy="0" r="20" stroke="#b8860b" stroke-width="1.5" fill="none" class="sketch"/>
+    <circle cx="0" cy="0" r="15" stroke="#b8860b" stroke-width="0.8" fill="none" class="sketch"/>
+    <line x1="0" y1="-14" x2="0" y2="14" stroke="#b8860b" stroke-width="0.6" class="sketch"/>
+    <line x1="-12" y1="-7" x2="12" y2="7" stroke="#b8860b" stroke-width="0.6" class="sketch"/>
+    <line x1="-12" y1="7" x2="12" y2="-7" stroke="#b8860b" stroke-width="0.6" class="sketch"/>
+  </g>
+
+  <!-- Small tomato bottom-left -->
+  <g transform="translate(120, 480) rotate(5)" opacity="0.05">
+    <ellipse cx="0" cy="0" rx="18" ry="15" fill="#8b2500" />
+    <path d="M-3,-15 Q0,-22 3,-15" stroke="#3a5a2a" stroke-width="1.5" fill="none" class="sketch"/>
+  </g>
+
+  <!-- Pepper/chili mid-left -->
+  <g transform="translate(50, 300) rotate(-30)" opacity="0.04">
+    <path d="M0,0 Q8,-5 12,-18 Q14,-30 10,-42 Q8,-48 6,-50" stroke="#8b2500" stroke-width="2" fill="none" class="sketch"/>
+    <path d="M0,0 Q-2,-8 4,-18 Q10,-28 8,-42 Q7,-48 6,-50" fill="#8b2500" opacity="0.3"/>
+    <path d="M0,0 Q-4,4 -6,2 Q-4,0 0,0" stroke="#3a5a2a" stroke-width="1" fill="#3a5a2a" opacity="0.3" class="sketch"/>
+  </g>
+
+  <!-- Onion bottom-right -->
+  <g transform="translate(650, 520) rotate(-10)" opacity="0.04">
+    <ellipse cx="0" cy="0" rx="22" ry="18" fill="#b8860b" opacity="0.3"/>
+    <ellipse cx="0" cy="0" rx="22" ry="18" stroke="#8b6914" stroke-width="1.5" fill="none" class="sketch"/>
+    <path d="M-8,-18 Q-6,-24 -2,-26 Q2,-24 4,-18" stroke="#3a5a2a" stroke-width="1" fill="none" class="sketch"/>
+    <path d="M-15,2 Q0,-6 15,2" stroke="#8b6914" stroke-width="0.6" fill="none" class="sketch"/>
+    <path d="M-18,0 Q0,8 18,0" stroke="#8b6914" stroke-width="0.6" fill="none" class="sketch"/>
+  </g>
+
+  <!-- Tiny star/asterisk scattered -->
+  <g opacity="0.04">
+    <text x="400" y="80" font-size="14" fill="#8b2500" font-family="serif">✽</text>
+    <text x="200" y="200" font-size="10" fill="#8b2500" font-family="serif">✽</text>
+    <text x="600" y="250" font-size="12" fill="#8b2500" font-family="serif">✽</text>
+    <text x="350" y="500" font-size="11" fill="#8b2500" font-family="serif">✽</text>
+    <text x="500" y="150" font-size="9" fill="#3a5a2a" font-family="serif">✽</text>
+  </g>
+
+  <!-- Wavy line accents -->
+  <g opacity="0.03">
+    <path d="M300,550 Q350,545 400,550 Q450,555 500,550" stroke="#8b2500" stroke-width="1" fill="none" class="sketch"/>
+    <path d="M100,150 Q130,145 160,150" stroke="#8b2500" stroke-width="0.8" fill="none" class="sketch"/>
+  </g>
+</svg>
