@@ -132,14 +132,6 @@
           "recipeUrl": "https://cooking.nytimes.com/recipes/6450-black-cod-broiled-with-miso",
           "image": "",
           "tags": ["nyt"]
-        },
-        {
-          "name": "Butter Chicken",
-          "emoji": "🍛",
-          "description": "Creamy tomato & butter curry with warm spices",
-          "recipeUrl": "",
-          "image": "",
-          "tags": []
         }
       ]
     },
