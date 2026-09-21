@@ -10,6 +10,7 @@ type MenuItem = {
   recipeUrl: string;
   recipeSource?: string;
   image?: string;
+  video?: string;
   protein?: string;
   servings?: string;
   ingredients?: string[];
@@ -40,14 +41,25 @@ function RecipeModal({
         style={{ borderRadius: "2px" }}
         onClick={(e) => e.stopPropagation()}
       >
-        {item.image && (
-          <div className="aspect-[16/10] overflow-hidden">
-            <img
-              src={item.image}
-              alt={item.name}
-              className="w-full h-full object-cover"
-            />
-          </div>
+        {item.video ? (
+          <video
+            src={item.video}
+            poster={item.image || undefined}
+            controls
+            playsInline
+            preload="none"
+            className="w-full max-h-[60vh] bg-ink object-contain"
+          />
+        ) : (
+          item.image && (
+            <div className="aspect-[16/10] overflow-hidden">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          )
         )}
         <div className="p-5">
           <h2 className="font-[family-name:var(--font-handwritten)] text-2xl text-ink mb-1">
@@ -140,15 +152,6 @@ function MenuCard({
       className={`w-full text-left bg-card/80 border border-border/60 shadow-sm overflow-hidden hover:rotate-0 hover:scale-[1.01] hover:shadow-md transition-all cursor-pointer ${tiltClass}`}
       style={{ borderRadius: "2px" }}
     >
-      {item.image && (
-        <div className="aspect-[16/10] overflow-hidden">
-          <img
-            src={item.image}
-            alt={item.name}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      )}
       <div className="px-4 py-3">
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0">
@@ -161,6 +164,11 @@ function MenuCard({
             {item.protein && (
               <span className="font-[family-name:var(--font-typewriter)] text-xs text-red-pen mt-1 inline-block">
                 💪 {item.protein}
+              </span>
+            )}
+            {item.video && (
+              <span className="font-[family-name:var(--font-typewriter)] text-xs text-red-pen mt-1 inline-block">
+                ▶ Video
               </span>
             )}
           </div>
