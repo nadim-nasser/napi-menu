@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import menuData from "@/data/menu.json";
 
 const DAYS = [
@@ -137,18 +137,56 @@ export default function PlanPage() {
     null
   );
   const [loaded, setLoaded] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // Load from API on mount
   useEffect(() => {
-    const weekKey = getWeekKey();
-    const stored = localStorage.getItem(`${STORAGE_KEY}-${weekKey}`);
-    if (stored) setPlan(JSON.parse(stored));
-    setLoaded(true);
+    fetch("/api/plan")
+      .then((r) => r.json())
+      .then((data) => {
+        setPlan(data || {});
+        setLoaded(true);
+      })
+      .catch(() => {
+        // Fallback to localStorage
+        const weekKey = getWeekKey();
+        const stored = localStorage.getItem(`${STORAGE_KEY}-${weekKey}`);
+        if (stored) setPlan(JSON.parse(stored));
+        setLoaded(true);
+      });
   }, []);
 
+  // Poll for changes every 10 seconds
   useEffect(() => {
     if (!loaded) return;
-    const weekKey = getWeekKey();
-    localStorage.setItem(`${STORAGE_KEY}-${weekKey}`, JSON.stringify(plan));
+    const interval = setInterval(() => {
+      fetch("/api/plan")
+        .then((r) => r.json())
+        .then((data) => {
+          if (data && JSON.stringify(data) !== JSON.stringify(plan)) {
+            setPlan(data);
+          }
+        })
+        .catch(() => {});
+    }, 10000);
+    return () => clearInterval(interval);
+  }, [loaded, plan]);
+
+  // Debounced save to API on change
+  useEffect(() => {
+    if (!loaded) return;
+    if (saveTimer.current) clearTimeout(saveTimer.current);
+    saveTimer.current = setTimeout(() => {
+      setSaving(true);
+      fetch("/api/plan", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(plan),
+      })
+        .then(() => setSaving(false))
+        .catch(() => setSaving(false));
+    }, 500);
   }, [plan, loaded]);
 
   function addMeal(day: string, type: string, meal: string, emoji: string) {
@@ -192,6 +230,7 @@ export default function PlanPage() {
           </svg>
           <p className="font-[family-name:var(--font-body)] text-sm text-muted">
             {formatWeekLabel()}
+            {saving && <span className="ml-2 text-xs text-red-pen/60">saving...</span>}
           </p>
           <svg width="40" height="6" viewBox="0 0 40 6" fill="none">
             <path d="M0 3 Q10 6 20 3 Q30 0 40 3" stroke="#c0392b" strokeWidth="1" fill="none" opacity="0.4"/>
