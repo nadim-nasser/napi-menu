@@ -56,6 +56,19 @@ git add -A && git commit -m "describe your change" && git push
 ```
 The site auto-deploys in ~30 seconds after pushing.
 
+## Gotchas
+- **Only `main` deploys.** Vercel publishes the live site from `main` only. Work on another branch or in a pull request (the default for phone/cloud Claude sessions) is not live until it is merged into `main`.
+- **Keep `menu.json` valid JSON.** Both pages import it directly, so a trailing comma, missing quote, or unclosed bracket fails the Vercel build and the site stops updating. Check before pushing:
+  ```
+  node -e "JSON.parse(require('fs').readFileSync('src/data/menu.json','utf8'))" && echo OK
+  ```
+- **The planner is not shared.** `src/app/plan/page.tsx` saves each week's plan to the browser's `localStorage` (key `napi-weekly-plan-<week>`). Nadim and Rupi each see only what was entered in their own browser, and clearing site data wipes it. There is no database or backend; syncing between people would need one.
+- **If `git push` fails with an auth error** on a new machine, log in to GitHub and let git use that login:
+  ```
+  gh auth login
+  gh auth setup-git
+  ```
+
 ## Collaborators
 - **Nadim** (nadim-nasser) — owner
 - **Rupi** (rupi-builds) — collaborator with push access
