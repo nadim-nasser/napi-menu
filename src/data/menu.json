@@ -46,13 +46,32 @@
           "tags": ["dishoom"]
         },
         {
-          "name": "Banana Date Porridge + Chia Seed",
+          "name": "Banana Date Porridge",
           "emoji": "🍌",
           "description": "Hearty winter-warmer — Medjool dates, banana & steel-cut oats. Natural sweetness, no sugar needed",
           "recipeUrl": "",
           "recipeSource": "Dishoom",
-          "image": "",
-          "tags": ["fibre"]
+          "servings": "1 generously",
+          "ingredients": [
+            "2–3 Medjool dates, according to preferred sweetness",
+            "1 ripe banana",
+            "170ml whole milk or soya milk",
+            "30g steel-cut oats"
+          ],
+          "steps": [
+            "Remove the stones from the dates. Peel the banana, slice off one third and set aside with one date half; these will be used to finish the porridge.",
+            "Chop the remaining dates and banana very finely. Place in a small pan and pour on 185ml boiling water. Cook over a low heat until you have a thick, mushy, reasonably smooth paste, stirring regularly and using the back of the spoon to crush any lumps; this should take around 10 minutes. You can also use a stick blender to deal with any stubborn lumps.",
+            "While the banana-date mixture is cooking, pour the milk into a bowl, tip in the oats and leave to soak for a few minutes.",
+            "When the banana-date mix is ready, add the milk and oats to the pan, bring to a gentle simmer and cook for 12–15 minutes, stirring regularly, until the oats are completely tender.",
+            "Slice the remaining third of the banana and finely shred the reserved date half. Serve the porridge in a warmed bowl, topped with the banana slices and dates."
+          ],
+          "notes": [
+            "Make it vegan by using soya milk instead of whole milk.",
+            "Count your dates carefully so it doesn't get too sweet: three if your soya milk is unsweetened, two if it's already sweetened.",
+            "If you make this regularly, the banana-date mix can be made in bigger batches a day or two ahead and kept in the fridge."
+          ],
+          "image": "/dishes/banana-date-porridge.jpg",
+          "tags": ["fibre", "dishoom"]
         },
         {
           "name": "Fire Toast Masala Beans",

@@ -15,6 +15,7 @@ type MenuItem = {
   servings?: string;
   ingredients?: string[];
   steps?: string[];
+  notes?: string[];
   tags: string[];
 };
 
@@ -106,6 +107,18 @@ function RecipeModal({
                   <li key={i}>{step}</li>
                 ))}
               </ol>
+            </div>
+          )}
+          {item.notes && item.notes.length > 0 && (
+            <div className="mt-4 border-l-2 border-red-pen/30 pl-3">
+              <h3 className="font-[family-name:var(--font-typewriter)] text-sm text-ink mb-1.5">
+                Good to know
+              </h3>
+              <ul className="space-y-1.5 font-[family-name:var(--font-handwritten)] text-base text-muted leading-snug">
+                {item.notes.map((note, i) => (
+                  <li key={i}>{note}</li>
+                ))}
+              </ul>
             </div>
           )}
 
