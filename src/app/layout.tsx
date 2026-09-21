@@ -28,7 +28,12 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Napi Meal Planning",
-  description: "Nadim & Rupi's meal planning",
+  description: "Nadim & Rupi's kitchen — our favourite meals, planned together 👨🏽‍🍳👩🏽‍🍳",
+  openGraph: {
+    title: "Napi Meal Planning 🍴",
+    description: "Our kitchen, our rules. Meal planning by Nadim & Rupi 👨🏽‍🍳👩🏽‍🍳",
+    images: ["/napi-hero.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
