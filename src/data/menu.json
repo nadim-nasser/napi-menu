@@ -5,12 +5,46 @@
       "emoji": "🌅",
       "items": [
         {
-          "name": "Omelette + Toast / Avocado",
+          "name": "Omelette + Toast",
           "emoji": "🥚",
-          "description": "Classic omelette with toast or avocado on the side",
+          "description": "Classic omelette with toast on the side",
           "recipeUrl": "",
           "image": "",
           "tags": ["quick"]
+        },
+        {
+          "name": "Avocado Toast",
+          "emoji": "🥑",
+          "description": "Smashed avocado on sourdough with pumpkin seeds, cherry tomatoes & arugula, with dressed boiled eggs on the side",
+          "recipeUrl": "",
+          "servings": "1 (scale up per person)",
+          "ingredients": [
+            "Eggs, as many as you like (boil extra for the next day)",
+            "1 ripe avocado",
+            "Fresh lemon juice",
+            "Salt, black pepper and red chili flakes",
+            "Flaky salt",
+            "About 5 cherry tomatoes",
+            "A generous handful of arugula",
+            "Sourdough bread",
+            "Roasted pumpkin seeds",
+            "Olive oil",
+            "Sriracha and/or chili oil (optional)",
+            "Baby sprouted broccoli or other microgreens (optional)",
+            "Ice, for cooling the eggs"
+          ],
+          "steps": [
+            "Bring a large pot of water to the boil. Gently lower in as many eggs as you want to eat with a spoon. It's worth boiling extra to have ready for the next day. Turn the heat down to medium, but make sure the water keeps boiling. Set a timer for 8 minutes: 6–7 minutes for a jammy, runnier yolk, or 10 minutes for a hard yolk.",
+            "While the eggs boil, take ripe avocados out of the fridge, one per person. Peel, slice and place them in a bowl.",
+            "Season with fresh lemon juice, salt, black pepper and red chili flakes. Smush with a spoon and set the bowl aside.",
+            "When the timer goes off, lift the eggs out and put them in a large bowl of ice and water. This stops them cooking.",
+            "Meanwhile, prepare the toppings. Wash and dry the arugula, a generous handful per person. Slice the cherry tomatoes (about 5 per person) into halves or thirds.",
+            "Toast your sourdough. Spread one avocado's worth of smashed avocado over each slice, then sprinkle with roasted pumpkin seeds and extra flaky salt. For an extra kick, add sriracha on top. Rupi always does.",
+            "Top with the cherry tomatoes and a generous handful of arugula. If you have baby sprouted broccoli or any microgreens, add those on top too.",
+            "Peel the eggs and cut them into quarters. Dress them with salt, pepper, red pepper flakes and a drizzle of olive oil. For a kick, add sriracha or chili oil. Serve alongside the avocado toast."
+          ],
+          "image": "",
+          "tags": []
         },
         {
           "name": "Samosa Wrap",
